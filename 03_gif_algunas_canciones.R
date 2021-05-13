@@ -51,7 +51,6 @@ preparar_grafico <- function(id, corregir_nombre = ""){
     ggtitle(paste0(song$artists[1], " - ", song$name[1]),
             "danielredondo.com") + 
     theme_classic() + 
-    labs(caption = "danielredondo.com") +
     scale_y_continuous(name = "Porcentaje", expand = c(0, 0), limits = c(0, 100)) + 
     theme(
       text = element_text(family = "Perpetua"),
